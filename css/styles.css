@@ -1,0 +1,244 @@
+:root {
+    --main-text: #757575;
+    --title-text: #212121;
+    --accent: #2196F3;
+    --main-bg: #FFFFFF;
+    --secondary-bg: #F5F4FA;
+    --hero-bg: #2F303A;
+}
+
+body {
+    font-family: Roboto, sans-serif, Raleway;
+    background-color: var(--main-bg);
+    color: var(--main-text);
+}
+
+
+/* header section */
+
+.navigation-list {
+    list-style: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-text);
+}
+
+.contacts-item {
+    list-style: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.contacts-link {
+    color: var(--main-text);
+}
+
+.nav-link {
+    color: var(--title-text);
+}
+
+.accent-color {
+    color: var(--accent);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--accent);
+}
+
+
+/* logo */
+
+.logo {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+}
+
+.web-logo {
+    color: var(--accent);
+}
+
+.studio-logo-header {
+    color: var(--title-text);
+}
+
+.studio-logo-fotter {
+    color: var(--main-bg)
+}
+
+
+/* hero section */
+
+.hero {
+    width: 1600px;
+    height: 600px;
+    left: 0px;
+    top: 80px;
+    background-color: var(--hero-bg);
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--main-bg);
+    background-color: var(--hero-bg);
+}
+
+.hero-button {
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 430px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: var(--accent);
+    color: var(--main-bg);
+}
+
+.hero-button-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    color: var(--main-bg);
+}
+
+
+/* main styles */
+
+.section-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text);
+}
+
+
+/* advantages */
+
+.advantage-list {
+    list-style: none;
+}
+
+.advantage-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text);
+}
+
+.advantage-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--main-text);
+}
+
+.item-list {
+    list-style: none;
+}
+
+.team-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--title-text);
+}
+
+.team-profession {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--main-text);
+}
+
+.section-bcg {
+    background-color: var(--secondary-bg);
+}
+
+
+/* footer */
+
+.footer {
+    background-color: var(--hero-bg);
+}
+
+.address-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--main-bg);
+}
+
+.address-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* Partfolio styles */
+
+.partfolio-buttons {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    cursor: pointer;
+}
+
+.partfolio-buttons:focus,
+.partfolio-buttons:hover {
+    color: var(--main-bg);
+    background-color: var(--accent);
+}
+
+.partfolio-image-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2.0;
+    color: var(--title-text);
+}
+
+.partfolio-image-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(--main-text);
+}
