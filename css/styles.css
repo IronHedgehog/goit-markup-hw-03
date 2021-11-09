@@ -14,6 +14,20 @@ body {
 }
 
 
+/* page-header container */
+
+.sections {
+    padding: 94px 0px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    /* background-color: rgb(27, 161, 194); */
+}
+
+
 /* header section */
 
 .navigation-list {
@@ -24,6 +38,10 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--title-text);
+}
+
+.contacts-list {
+    margin-bottom: 0;
 }
 
 .contacts-item {
@@ -83,28 +101,27 @@ body {
 /* hero section */
 
 .hero {
-    width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px;
+    text-align: center;
     background-color: var(--hero-bg);
 }
 
 .hero-title {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding-top: 200px;
+    width: 692px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
-    text-align: center;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
     color: var(--main-bg);
-    background-color: var(--hero-bg);
 }
 
 .hero-button {
-    width: 200px;
-    height: 50px;
-    left: 700px;
-    top: 430px;
+    margin-bottom: 200px;
+    min-width: 200px;
+    min-height: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     background-color: var(--accent);
@@ -125,6 +142,7 @@ body {
 /* main styles */
 
 .section-title {
+    margin: 0;
     font-weight: bold;
     font-size: 36px;
     line-height: 1.2;
@@ -137,6 +155,7 @@ body {
 /* advantages */
 
 .advantage-list {
+    margin-bottom: 0;
     list-style: none;
 }
 
@@ -151,6 +170,7 @@ body {
 }
 
 .advantage-text {
+    margin-bottom: 0;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -160,6 +180,7 @@ body {
 }
 
 .item-list {
+    margin-bottom: 0;
     list-style: none;
 }
 
@@ -173,6 +194,7 @@ body {
 }
 
 .team-profession {
+    margin-bottom: 0;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -193,6 +215,7 @@ body {
 }
 
 .address-text {
+    margin-bottom: 0;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
