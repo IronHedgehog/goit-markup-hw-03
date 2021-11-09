@@ -27,10 +27,19 @@ body {
     /* background-color: rgb(27, 161, 194); */
 }
 
+.img {
+    display: block;
+}
+
 
 /* header section */
 
+.header-flex {
+    display: flex;
+}
+
 .navigation-list {
+    display: flex;
     list-style: none;
     font-style: normal;
     font-weight: 500;
@@ -40,9 +49,24 @@ body {
     color: var(--title-text);
 }
 
+.nav-item+.nav-item {
+    margin-left: 50px;
+}
+
+
+/* :not(:last-child) */
+
 .contacts-list {
+    display: flex;
     margin-bottom: 0;
 }
+
+.contacts-item+.contacts-item {
+    margin-left: 50px;
+}
+
+
+/* :not(:last-child) */
 
 .contacts-item {
     list-style: none;
@@ -109,7 +133,6 @@ body {
     margin-top: 0px;
     margin-bottom: 30px;
     padding-top: 200px;
-    width: 692px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
