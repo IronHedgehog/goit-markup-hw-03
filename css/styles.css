@@ -5,6 +5,7 @@
     --main-bg: #FFFFFF;
     --secondary-bg: #F5F4FA;
     --hero-bg: #2F303A;
+    --header-borderline: #E5E5E5
 }
 
 body {
@@ -18,6 +19,7 @@ h1,
 h2,
 h3 {
     margin: 0;
+    padding: 0;
 }
 
 ul,
@@ -47,8 +49,9 @@ ol {
     display: flex;
 }
 
-
-/* page-header container */
+.page-header {
+    border-bottom: 1px solid var(--header-borderline);
+}
 
 
 /* header section */
@@ -359,7 +362,7 @@ ol {
 
 /* Partfolio styles */
 
-.partfolio-buttons {
+.partfolio-item-list .partfolio-buttons {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -387,4 +390,13 @@ ol {
     line-height: 1.9;
     letter-spacing: 0.03em;
     color: var(--main-text);
+}
+
+.buttons-list {
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.partfolio-item-list {
+    flex-wrap: wrap;
 }
