@@ -36,7 +36,7 @@ ol {
     padding-left: 15px;
     padding-right: 15px;
     width: 1200px;
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(0, 0, 0); */
 }
 
 .img {
@@ -149,6 +149,8 @@ ol {
 /* hero section */
 
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
     background-color: var(--hero-bg);
 }
@@ -157,7 +159,6 @@ ol {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 30px;
-    padding-top: 200px;
     max-width: 700px;
     font-weight: 900;
     font-size: 44px;
@@ -168,7 +169,7 @@ ol {
 }
 
 .hero-button {
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
     min-width: 200px;
     min-height: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -188,6 +189,14 @@ ol {
 }
 
 
+/* advantage-container */
+
+.advantage-container {
+    margin-top: 94px;
+    margin-bottom: 47px;
+}
+
+
 /* main styles */
 
 .section-title {
@@ -203,12 +212,18 @@ ol {
 
 /* advantages */
 
-.advantage-list {
-    margin-bottom: 0;
-    list-style: none;
+.sections-f-s-p {
+    padding-top: 94px;
+    padding-bottom: 47px;
+}
+
+.hidden-title {
+    display: none;
 }
 
 .advantage-title {
+    display: flex;
+    flex-direction: column;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -218,19 +233,28 @@ ol {
     color: var(--title-text);
 }
 
+.advantage-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.advantage-list-item+.advantage-list-item {
+    margin-left: 30px;
+}
+
+
+/* .contacts-item:not(:last-child) {
+    margin-left: 30px;
+} */
+
 .advantage-text {
-    margin-bottom: 0;
+    max-width: 270px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--main-text);
-}
-
-.item-list {
-    margin-bottom: 0;
-    list-style: none;
 }
 
 .team-title {
