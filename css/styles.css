@@ -13,33 +13,54 @@ body {
     color: var(--main-text);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+{
+    margin: 0;
+    padding: 0;
+}
 
-/* page-header container */
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 .sections {
     padding: 94px 0px;
 }
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     width: 1200px;
-    /* background-color: rgb(27, 161, 194); */
+    background-color: rgb(0, 0, 0);
 }
 
 .img {
     display: block;
 }
 
-
-/* header section */
-
-.header-flex {
+.flex-box {
     display: flex;
 }
 
+
+/* page-header container */
+
+
+/* header section */
+
 .navigation-list {
     display: flex;
+    margin-right: 330px;
     list-style: none;
     font-style: normal;
     font-weight: 500;
@@ -58,15 +79,10 @@ body {
 
 .contacts-list {
     display: flex;
+    justify-content: flex-end;
     margin-bottom: 0;
+    margin-right: auto;
 }
-
-.contacts-item+.contacts-item {
-    margin-left: 50px;
-}
-
-
-/* :not(:last-child) */
 
 .contacts-item {
     list-style: none;
@@ -77,12 +93,25 @@ body {
     letter-spacing: 0.02em;
 }
 
-.contacts-link {
-    color: var(--main-text);
+.contacts-item+.contacts-item {
+    margin-left: 50px;
 }
 
+
+/* :not(:last-child) */
+
 .nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--title-text);
+}
+
+.contacts-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--main-text);
 }
 
 .accent-color {
@@ -99,9 +128,16 @@ body {
 }
 
 
+/* padding-top: 32px;
+    padding-bottom: 32px; */
+
+
 /* logo */
 
 .logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    padding-right: 93px;
     font-family: Raleway;
     font-weight: bold;
     font-size: 26px;
