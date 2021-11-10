@@ -189,14 +189,6 @@ ol {
 }
 
 
-/* advantage-container */
-
-.advantage-container {
-    margin-top: 94px;
-    margin-bottom: 47px;
-}
-
-
 /* main styles */
 
 .section-title {
@@ -212,7 +204,7 @@ ol {
 
 /* advantages */
 
-.sections-f-s-p {
+.section-f-s-p-b {
     padding-top: 94px;
     padding-bottom: 47px;
 }
@@ -257,13 +249,59 @@ ol {
     color: var(--main-text);
 }
 
+
+/* section about us */
+
+.section-f-s-p-t {
+    padding-top: 47px;
+    padding-bottom: 94px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.about-us-photo+.about-us-photo {
+    margin-left: 30px;
+}
+
+
+/* .about-us-photo:not(:last-child){
+    margin-right: 30px;
+} */
+
+
+/* section our team */
+
+.about-us-title {
+    margin-bottom: 50px;
+}
+
 .team-title {
+    padding-bottom: 10px;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--title-text);
+}
+
+.our-team-cards {
+    background-color: var(--main-bg);
+}
+
+.our-team-cards+.our-team-cards {
+    margin-left: 30px;
+}
+
+
+/*  .our-team-cards:not(:last-child){
+    margin-right: 30px;
+}*/
+
+.cards-padding {
+    padding-bottom: 30px;
 }
 
 .team-profession {
@@ -287,7 +325,19 @@ ol {
     background-color: var(--hero-bg);
 }
 
+.footer-section-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-logo-padding {
+    display: block;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
 .address-text {
+    max-width: 231px;
     margin-bottom: 0;
     font-style: normal;
     font-weight: normal;
