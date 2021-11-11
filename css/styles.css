@@ -3,9 +3,11 @@
     --title-text: #212121;
     --accent: #2196F3;
     --main-bg: #FFFFFF;
-    --secondary-bg: #F5F4FA;
     --hero-bg: #2F303A;
-    --header-borderline: #E5E5E5
+    --header-borderline: #E5E5E5;
+    --secondary-bg: #F5F4FA;
+    --partfolio-border: #EEEEEE;
+    --header-borderline: #E5E5E5;
 }
 
 body {
@@ -388,6 +390,8 @@ ol {
 }
 
 .partfolio-image-name {
+    margin-left: 22px;
+    margin-bottom: 4px;
     font-weight: bold;
     font-size: 18px;
     line-height: 2.0;
@@ -395,6 +399,8 @@ ol {
 }
 
 .partfolio-image-text {
+    margin-left: 22px;
+    margin-bottom: 20px;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -417,4 +423,12 @@ ol {
     justify-content: space-between;
 }
 
-.partfolio-list-item {}
+.partfolio-list-item {
+    background: var(--main-bg);
+    border: 1px solid var(--partfolio-border);
+    /* outline: 1px solid red; */
+}
+
+.partfolio-image {
+    margin-bottom: 20px;
+}
