@@ -7,7 +7,6 @@
     --header-borderline: #E5E5E5;
     --secondary-bg: #F5F4FA;
     --partfolio-border: #EEEEEE;
-    --header-borderline: #E5E5E5;
 }
 
 body {
@@ -43,8 +42,10 @@ ol {
     /* background-color: rgb(0, 0, 0); */
 }
 
-.img {
+img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .flex-box {
@@ -198,6 +199,7 @@ ol {
 
 .section-title {
     margin: 0;
+    margin-bottom: 50px;
     font-weight: bold;
     font-size: 36px;
     line-height: 1.2;
@@ -219,8 +221,6 @@ ol {
 }
 
 .advantage-title {
-    display: flex;
-    flex-direction: column;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -228,6 +228,7 @@ ol {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-text);
+    margin-bottom: 10px;
 }
 
 .advantage-flex {
@@ -278,12 +279,8 @@ ol {
 
 /* section our team */
 
-.about-us-title {
-    margin-bottom: 50px;
-}
-
 .team-title {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -300,14 +297,15 @@ ol {
     margin-left: 30px;
 }
 
+.our-team-cards-text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 
 /*  .our-team-cards:not(:last-child){
     margin-right: 30px;
 }*/
-
-.cards-padding {
-    padding-bottom: 30px;
-}
 
 .team-profession {
     margin-bottom: 0;
@@ -343,7 +341,7 @@ ol {
 
 .address-text {
     max-width: 231px;
-    margin-bottom: 0;
+    margin-bottom: 9px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -353,12 +351,17 @@ ol {
 }
 
 .address-link {
+    display: inline-block;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.address-link:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 
@@ -378,7 +381,6 @@ ol {
     text-align: center;
     cursor: pointer;
     background-color: var(--secondary-bg);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border: transparent;
     border-radius: 4px;
 }
@@ -387,11 +389,17 @@ ol {
 .partfolio-buttons:hover {
     color: var(--main-bg);
     background-color: var(--accent);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.partfolio-card-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .partfolio-image-name {
-    margin-left: 22px;
-    margin-bottom: 4px;
     font-weight: bold;
     font-size: 18px;
     line-height: 2.0;
@@ -399,8 +407,6 @@ ol {
 }
 
 .partfolio-image-text {
-    margin-left: 22px;
-    margin-bottom: 20px;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -420,15 +426,14 @@ ol {
 
 .partfolio-item-list {
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-bottom: -30px;
+    margin-right: -30px;
 }
 
 .partfolio-list-item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
     background: var(--main-bg);
     border: 1px solid var(--partfolio-border);
-    /* outline: 1px solid red; */
-}
-
-.partfolio-image {
-    margin-bottom: 20px;
 }
